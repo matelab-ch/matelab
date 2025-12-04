@@ -36,3 +36,11 @@ stores:
         amount: 1
         date: 2023-01-12
         comment: "-"
+
+    -
+        name: "Prodega Transgourmet"
+        url: "https://web.transgourmet.ch/de/webshop/catalog/article/650870"
+        price: 1.90
+        amount: 1
+        date: 2023-01-12
+        comment: "Kundenkarte erforderlich"
