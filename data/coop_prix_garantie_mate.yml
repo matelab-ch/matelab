@@ -1,0 +1,22 @@
+draft: false
+brand: "Coop"
+product: "Prix Garantie Mate"
+size: 330
+packaging: "Can"
+caffeine: 23
+sugar: 5.2
+ingredients:
+    - "Aufguss aus Mate (Wasser, Mate)"
+    - "Zucker"
+    - "Zitronensaft aus Konzentrat"
+    - "Kohlensäure"
+    - "Guaranaextrakt (0.2%)"
+    - "Aroma"
+stores:
+    -
+        name: "Coop"
+        url: "https://www.coop.ch/de/lebensmittel/getraenke/soft-drinks/cola-limonaden/uebrige-limonaden/prix-garantie-mate-6x33cl/p/7440454"
+        price: 5.95
+        amount: 6
+        date: 2026-01-14
+        comment: "-"
