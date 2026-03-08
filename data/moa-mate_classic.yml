@@ -1,0 +1,26 @@
+draft: false
+discontinued: false
+brand: Moa Mate
+product: Classic
+size: 330
+packaging: Can
+caffeine: 30
+sugar: 5.5
+ingredients:
+    - "Wasser"
+    - "Zucker"
+    - "Zitronensaft aus Konzentrat"
+    - "Mate-Extrakt 0,7%"
+    - "Kohlensäure"
+    - "natürliches Matearoma"
+    - "Aroma Koffein"
+    - "Konservierungsstoff (E 202)"
+    - "natürliches Aroma"
+stores:
+    -
+        name: Coop
+        url: https://www.coop.ch/de/lebensmittel/getraenke/soft-drinks/cola-limonaden/uebrige-limonaden/moa-mate-classic-6x33cl/p/7471811
+        price: 9.60
+        amount: 6
+        date: 2026-03-08
+        comment:
