@@ -1,28 +1,50 @@
 # Contributing
 
-**Adding new data**
+## Adding a Missing Product
 
-+ For new products, copy the template from `templates/product.yml` into `data`. 
-+ Give it a name in the format of `<brand>_<product>.yml`. 
-	+ If you are adding data for an existing product but in different packaging, name it `<brand>_<product>_<packaging>.yml`.
-+ Edit the file and submit your changes via a pull request. Please also send your source (URL, picture of beverage) for me to verify the data.
+For missing products, check out the list of [open issues](https://github.com/matelab-ch/matelab/issues?q=state%3Aopen%20label%3A%22missing%20product%22). To add a new product:
++ Copy the template from `templates/product.yml` into `data`. 
+	+ Give it a name in the format of `<brand>_<product>.yml`. 
+	+ If you are adding a product in different packaging, name it `<brand>_<product>_<packaging>.yml`.
++ Edit the file and submit your changes via a pull request.
+	+ Please also send your source (URL, picture of beverage) for me to verify the data.
 
-**Changing existing data**
+## Adding Missing Data
 
-+ Existing products can be found under `data`. 
-+ Edit the file and submit your changes via a pull request. Please also send your source (URL, picture of beverage) for me to verify the data.
+For missing data, check out the list of [open issues](https://github.com/matelab-ch/matelab/issues?q=state%3Aopen%20label%3A%22missing%20data%22). To change existing data:
 
-**Removing/Discontinuing a product**
++ Find the product under `data`. 
++ Edit the file and submit your changes via a pull request.
+	+ If the file has all required data, set `draft` to `false`.
+	+ Please also send your source (URL, picture of beverage) for me to verify the data.
+
+## Removing/Discontinuing a Product
 
 + Since this data should be a sort of archive, products should not get fully deleted
-+ If a product is no longer available, set `discontinued` to `true` but **do not remove store links**
-+ Edit the file and submit your changes via a pull request. Please also send your source (URL, picture of beverage) for me to verify the data.
++ If a product is no longer available, find the product under `data`. 
++ Edit the file and submit your changes via a pull request.
+	+ Set `discontinued` to `true` but **do not remove store links**.
+	+ Please also send your source (URL, picture of beverage) for me to verify the data.
 
-## Missing data
+## Dev Setup
 
-| Product                  | Data     | Comment                                                |
-|--------------------------|----------|--------------------------------------------------------|
-| all i need mate tea      | Caffeine |                                                        |
-| Coop Karma Mate & Orange | Caffeine |                                                        |
-| Outlawz Holunder Mate    | Caffeine | Needs manual testing; manufacturer did not measure it  |
-| Pri Mate                 | Caffeine |                                                        |
+```sh
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+
+python3 build.py
+
+python3 -m http.server -d output 8081
+```
+
+## Contributors
+
+<a href="https://github.com/matelab-ch/matelab/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=rtfmkiesel/matelab" />
+</a>
+
+<br>
+
+Special thanks to [SigristFabian](https://x.com/SigristFabian) and [volerysandro](https://x.com/volerysandro) for helping with the initial site and data.
+

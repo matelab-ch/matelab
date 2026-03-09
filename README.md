@@ -4,17 +4,5 @@
 
 This is the repository for [matelab.ch](https://matelab.ch), a community-driven site about [mate-based](https://en.wikipedia.org/wiki/Mate_(drink)) beverages available in Switzerland.
 
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md)
-
-### Contributors
-
-<a href="https://github.com/matelab-ch/matelab/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=rtfmkiesel/matelab" />
-</a>
-
-<br><br>
-
-Special thanks to [SigristFabian](https://x.com/SigristFabian) and [volerysandro](https://x.com/volerysandro) for helping with the initial site and data.
+If you want to contribute, check out [CONTRIBUTING.md](CONTRIBUTING.md).
 
