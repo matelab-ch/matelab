@@ -37,14 +37,3 @@ python3 build.py
 
 python3 -m http.server -d output 8081
 ```
-
-## Contributors
-
-<a href="https://github.com/matelab-ch/matelab/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=rtfmkiesel/matelab" />
-</a>
-
-<br>
-
-Special thanks to [SigristFabian](https://x.com/SigristFabian) and [volerysandro](https://x.com/volerysandro) for helping with the initial site and data.
-
