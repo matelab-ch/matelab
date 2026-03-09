@@ -1,0 +1,20 @@
+draft: true
+brand: "VIVI"
+product: "Mate"
+size: 330
+packaging: Can
+caffeine: 20 # FIXME
+sugar: 5
+ingredients:
+    - "Aufguss aus Mate- und Kaffeekirschentee (Wasser, Mate-Tee, Kaffeekirschentee) Extraktgehalt (1.4g/l)"
+    - "Zucker"
+    - "Säurungsmittel (Zitronensäure)"
+    - "Kohlensäure"
+stores: 
+    -
+        name: "Migros"
+        url: "https://www.migros.ch/en/product/120249700000"
+        price: 1.80
+        amount: 1
+        date: 2026-03-09
+        comment: "-"
