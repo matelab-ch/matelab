@@ -1,0 +1,25 @@
+draft: false
+discontinued: false
+brand: Moa Mate
+product: Zero Açai
+size: 330
+packaging: Can
+caffeine: 30
+sugar: 0
+ingredients:
+    - "Wasser"
+    - "Zitronensaft aus Konzentrat"
+    - "Mate-Extrakt 0,7%"
+    - "Kohlensäure"
+    - "natürliches Aroma"
+    - "Aroma Koffein"
+    - "Konservierungsstoff (E 202)"
+    - "Süssungsmittel (E 955, E950)"
+stores:
+    -
+        name: Coop
+        url: https://www.coop.ch/de/lebensmittel/getraenke/soft-drinks/cola-limonaden/uebrige-limonaden/moa-mate-zero-acai-flavor-6x33cl/p/7461600
+        price: 9.60
+        amount: 6
+        date: 2026-03-08
+        comment:
