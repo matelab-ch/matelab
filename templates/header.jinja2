@@ -61,20 +61,6 @@
 		</header>
 		<script>
 		document.addEventListener('DOMContentLoaded', function() {
-			// Detect page for nav menu highlighting
-			const currentPath = window.location.pathname;
-			const navLinks = document.querySelectorAll('.nav-link');
-			
-			navLinks.forEach(link => {
-				link.classList.remove('active');
-				
-				if (currentPath === '/' && link.getAttribute('href') === '/') {
-					link.classList.add('active');
-				} else if (currentPath.includes('/more.html') && link.getAttribute('href') === '/more.html') {
-					link.classList.add('active');
-				}
-			});
-
 			// Apply dark mode to data tables
 			// https://datatables.net/manual/styling/dark-mode#Auto-detection
 			let prefers = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
