@@ -14,6 +14,13 @@ SCRIPT_DIR = os.path.abspath(os.path.realpath(os.path.dirname(__file__)))
 OUTPUT_DIR = os.path.join(SCRIPT_DIR, "output")
 DATA_DIR = os.path.join(SCRIPT_DIR, "data")
 
+def calc_score(caffeine, sugar, avrprice):
+    """
+    Calculate the matelab score
+    
+    caffeine/((sugar+1)/avrprice)
+    """
+    return round2(float(caffeine) / ((float(sugar)+1)*float(avrprice)))
 
 def round2(number):
     """
@@ -118,6 +125,9 @@ def render_products(env: jinja2.Environment, render_drafts: bool):
             # total sugar in product
             product_sugartotal = product_yaml["sugar"] * (product_yaml["size"] / 100)
             product_yaml.update({"sugartotal": round2(product_sugartotal)})
+
+        # score
+        product_yaml.update({"score": calc_score(product_yaml["caffeine"], product_yaml["sugar"], product_yaml["averageprice"])})
 
         products.append(product_yaml)
 

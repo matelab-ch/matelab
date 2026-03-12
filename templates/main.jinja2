@@ -2,63 +2,89 @@
 
 <div class="mobileonly">
 	<p>Not designed for small screens ¯\_(ツ)_/¯</p>
+	<br>
 </div>
 
-<div>
-	<label for="search-input">Search:</label>
-	<input type="search" id="search-input" placeholder="" aria-controls="data-table">
-</div>
+<div class="filter-bar">
+	<input type="search" id="search-input" placeholder="Search products…" aria-controls="data-table">
 
-<details closed="">
-	<summary>Select Columns</summary>
-	<div class="column-controls">
-		<div class="column-grid">
-			<label class="column-toggle">
-				<input type="checkbox" class="toggle-column" data-column="1" checked>
-				<span class="column-toggle-label">Avg Price</span>
-			</label>
-			<label class="column-toggle">
-				<input type="checkbox" class="toggle-column" data-column="3" checked>
-				<span class="column-toggle-label">Caffeine (mg/100ml)</span>
-			</label>
-			<label class="column-toggle">
-				<input type="checkbox" class="toggle-column" data-column="5">
-				<span class="column-toggle-label">Caffeine per Sugar</span>
-			</label>
-			<label class="column-toggle">
-				<input type="checkbox" class="toggle-column" data-column="4" checked>
-				<span class="column-toggle-label">Caffeine Total</span>
-			</label>
-			<label class="column-toggle">
-				<input type="checkbox" class="toggle-column" data-column="6">
-				<span class="column-toggle-label">Price per Caffeine</span>
-			</label>
-			<label class="column-toggle">
-				<input type="checkbox" class="toggle-column" data-column="2" checked>
-				<span class="column-toggle-label">Price per 100ml</span>
-			</label>
-			<label class="column-toggle">
-				<input type="checkbox" class="toggle-column" data-column="7" checked>
-				<span class="column-toggle-label">Sugar (g/100ml)</span>
-			</label>
-			<label class="column-toggle">
-				<input type="checkbox" class="toggle-column" data-column="9">
-				<span class="column-toggle-label">Sugar per Caffeine</span>
-			</label>
-			<label class="column-toggle">
-				<input type="checkbox" class="toggle-column" data-column="8" checked>
-				<span class="column-toggle-label">Sugar Total</span>
-			</label>
+	<div class="filter-group">
+		<label class="toggle-pill">
+			<input type="checkbox" id="hide-zero-sugar" checked>
+			<span>Show zero-sugar</span>
+		</label>
+		<label class="toggle-pill">
+			<input type="checkbox" id="hide-discontinued">
+			<span>Show discontinued</span>
+		</label>
+
+		<div class="dropdown" id="columns-dropdown">
+			<button class="dropdown-btn toggle-pill" aria-haspopup="true" aria-expanded="false">
+				Columns
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="12"><path d="M98 190.06l139.78 163.12a24 24 0 0036.44 0L414 190.06c13.34-15.57 2.28-39.62-18.22-39.62h-279.6c-20.5 0-31.56 24.05-18.18 39.62z"/></svg>
+			</button>
+			<div class="dropdown-menu">
+				<label class="column-toggle">
+					<input type="checkbox" class="toggle-column" data-column="1" checked>
+					<span class="column-toggle-label">Size</span>
+				</label>
+				<label class="column-toggle">
+					<input type="checkbox" class="toggle-column" data-column="2">
+					<span class="column-toggle-label">Packaging</span>
+				</label>
+				<label class="column-toggle">
+					<input type="checkbox" class="toggle-column" data-column="3">
+					<span class="column-toggle-label">Avg Price</span>
+				</label>
+				<label class="column-toggle">
+					<input type="checkbox" class="toggle-column" data-column="4">
+					<span class="column-toggle-label">Price per 100ml</span>
+				</label>
+				<label class="column-toggle">
+					<input type="checkbox" class="toggle-column" data-column="5">
+					<span class="column-toggle-label">Caffeine (mg/100ml)</span>
+				</label>
+				<label class="column-toggle">
+					<input type="checkbox" class="toggle-column" data-column="6" checked>
+					<span class="column-toggle-label">Caffeine Total</span>
+				</label>
+				<label class="column-toggle">
+					<input type="checkbox" class="toggle-column" data-column="7">
+					<span class="column-toggle-label">Caffeine per Sugar</span>
+				</label>
+				<label class="column-toggle">
+					<input type="checkbox" class="toggle-column" data-column="8">
+					<span class="column-toggle-label">Price per Caffeine</span>
+				</label>
+				<label class="column-toggle">
+					<input type="checkbox" class="toggle-column" data-column="9">
+					<span class="column-toggle-label">Sugar (g/100ml)</span>
+				</label>
+				<label class="column-toggle">
+					<input type="checkbox" class="toggle-column" data-column="10" checked>
+					<span class="column-toggle-label">Sugar Total</span>
+				</label>
+				<label class="column-toggle">
+					<input type="checkbox" class="toggle-column" data-column="11">
+					<span class="column-toggle-label">Sugar per Caffeine</span>
+				</label>
+				<label class="column-toggle">
+					<input type="checkbox" class="toggle-column" data-column="12" checked>
+					<span class="column-toggle-label">Score</span>
+				</label>
+			</div>
 		</div>
 	</div>
-</details>
+</div>
 
 <div class="table-container">
 	<table id="data-table" class="display compact">
 		<thead>
 			<tr>
 				<th>Product</th>
-				<th class="numeric">Avg Price<br><small>(CHF)</small></th>
+				<th class="numeric">Size<br><small>(ml)</small></th>
+				<th class="numeric">Packaging</th>
+				<th class="numeric">Avg. Price<br><small>(CHF)</small></th>
 				<th class="numeric">Price/100ml<br><small>(CHF)</small></th>
 				<th class="numeric">Caffeine<br><small>(mg/100ml)</small></th>
 				<th class="numeric">Caffeine Total<br><small>(mg)</small></th>
@@ -67,19 +93,18 @@
 				<th class="numeric">Sugar<br><small>(g/100ml)</small></th>
 				<th class="numeric">Sugar Total<br><small>(g)</small></th>
 				<th class="numeric">Sugar/1mg Caffeine<br><small>(g)</small></th>
+				<th title="Caffeine/((Sugar+1)*AvrPrice)" class="numeric">Score</th>
 			</tr>
 		</thead>
 		<tbody>
 			{% for item in products %}
 			<tr{% if item.discontinued %} class="discontinued"{% endif %}>
 				<td>
-					<a href="/products/{{ item['siteurl'] }}">
-						{{ item["brand"] }} {{ item["product"] }}
-					</a>
-					<div>
-						{{ item["size"] }}ml ({{ item["packaging"] }}){% if item.discontinued %}; No longer available{% endif %}
-					</div>
+					<a href="/products/{{ item['siteurl'] }}">{{ item["brand"] }} {{ item["product"] }}</a>
+					{% if item.discontinued %}<span class="dull small nodec"> No longer available</span>{% endif %}
 				</td>
+				<td class="numeric">{{ item["size"] }}</td>
+				<td class="numeric">{{ item["packaging"] }}</td>
 				<td class="numeric">{{ item["averageprice"] }}</td>
 				<td class="numeric">{{ item["price100ml"] }}</td>
 				<td class="numeric">{{ item["caffeine"] }}</td>
@@ -89,6 +114,7 @@
 				<td class="numeric">{{ item["sugar"] }}</td>
 				<td class="numeric">{{ item["sugartotal"] }}</td>
 				<td class="numeric">{{ item["sugar1mgcaffeine"] }}</td>
+				<td class="numeric">{{ item["score"] }}</td>
 			</tr>
 			{% endfor %}
 		</tbody>
@@ -100,9 +126,9 @@ $(document).ready(function() {
 	var table = $('#data-table').DataTable({
 		order: [[0, 'asc']], // sort by name by default
 		columnDefs: [
-			{ targets: [1, 2, 3, 4, 5, 6, 7, 8, 9], className: 'numeric' },
+			{ targets: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], className: 'numeric' },
 			// Hide certain columns by default
-			{ targets: [3, 5, 6, 8, 9], visible: false }
+			{ targets: [2, 3, 4, 5, 7, 8, 9, 11], visible: false }
 		],
 		scrollX: true,
 		paging: false,
@@ -131,6 +157,50 @@ $(document).ready(function() {
 			checkbox.prop('checked', this.visible());
 		}
 	});
+
+	// Zero-sugar toggle
+	// Sugar is column index 7 (Sugar g/100ml). 
+	// We filter rows where that cell equals "0" or "0.0" etc.
+	$.fn.dataTable.ext.search.push(function(settings, data, dataIndex) {
+		if ($('#hide-zero-sugar').is(':checked')) return true; // show all
+		var sugarVal = parseFloat(data[7]); // column 7 = Sugar (g/100ml)
+		return !(sugarVal === 0 || isNaN(sugarVal) && data[7].trim() === '0');
+	});
+
+	$('#hide-zero-sugar').on('change', function() {
+		table.draw();
+	});
+
+	// Discontinued toggle
+	$.fn.dataTable.ext.search.push(function(settings, data, dataIndex) {
+		if ($('#hide-discontinued').is(':checked')) return true;
+		var $row = $(table.row(dataIndex).node());
+		return !$row.hasClass('discontinued');
+	});
+
+	$('#hide-discontinued').on('change', function() {
+		table.draw();
+	});
+
+	// Columns dropdown toggle
+	var $dropdown = $('#columns-dropdown');
+	$dropdown.find('.dropdown-btn').on('click', function(e) {
+		e.stopPropagation();
+		var open = $dropdown.hasClass('open');
+		$dropdown.toggleClass('open', !open);
+		$(this).attr('aria-expanded', !open);
+	});
+
+	$(document).on('click', function() {
+		$dropdown.removeClass('open');
+		$dropdown.find('.dropdown-btn').attr('aria-expanded', false);
+	});
+
+	$dropdown.find('.dropdown-menu').on('click', function(e) {
+		e.stopPropagation();
+	});
+
+	table.draw(); // Draw once initialized to hide discontinued products
 });
 </script>
 

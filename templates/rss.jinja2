@@ -3,11 +3,11 @@
   <title>matelab.ch - The Swiss Mate Index</title>
   <link href="https://matelab.ch/"/>
   <link href="https://matelab.ch/feed.xml" rel="self"/>
-  <icon>https://matelab.ch/logo_meta.png</icon>
-  <logo>https://matelab.ch/logo_meta.png</logo>
+  <icon>https://matelab.ch/logo_transparent.png</icon>
+  <logo>https://matelab.ch/logo_transparent.png</logo>
   <id>https://matelab.ch/</id>
   <updated>{{ now().strftime('%Y-%m-%dT%H:%M:%SZ') }}</updated>
-  <subtitle>Compare mate-based beverages</subtitle>
+  <subtitle>Compare mate-based beverages available in Switzerland</subtitle>
   {% for item in products %}<entry>
     <title>{{ (item.brand ~ " " ~ item.product ~ " - " ~ item["size"] ~ "ml (" ~ item["packaging"] ~ ")") | e }}</title>
     <link href="https://matelab.ch/products/{{ item.siteurl }}"/>

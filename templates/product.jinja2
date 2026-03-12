@@ -1,31 +1,36 @@
 {% include "header.jinja2" %}
 
-<h2>{{ item['brand'] }} - {{ item['product'] }}</h2>
+<div class="product-hero">
+	<div>
+		<h2>{{ item['brand'] }} <span class="dull">{{ item['product'] }}</span></h2>
+		<p class="dull small">{{ item['size'] }}ml; {{ item['packaging'] }}; <a class="nav-link small" href="https://github.com/matelab-ch/matelab/blob/main/data/{{ item['filename'] }}" target="_blank">View on GitHub ↗</a></p>
+	</div>
+</div>
 
 <div class="stats-grid">
 	<div class="stat-card">
-		<h4>Size</h4>
-		<div class="value">{{ item['size'] }}ml</div>
+		<div class="x-small">Caffeine</div>
+		<div class="accent">{{ item['caffeine'] }}<span class="dull x-small"> mg/100ml</span></div>
 	</div>
 	<div class="stat-card">
-		<h4>Packaging</h4>
-		<div class="value">{{ item['packaging'] }}</div>
+		<div class="x-small">Total Caffeine</div>
+		<div class="accent">{{ item['caffeinetotal'] }}<span class="dull x-small"> mg</span></div>
 	</div>
 	<div class="stat-card">
-		<h4>Caffeine</h4>
-		<div class="value">{{ item['caffeine'] }}mg/100ml</div>
+		<div class="x-small">Sugar</div>
+		<div class="accent">{{ item['sugar'] }}<span class="dull x-small"> g/100ml</span></div>
 	</div>
 	<div class="stat-card">
-		<h4>Total Caffeine</h4>
-		<div class="value">{{ item['caffeinetotal'] }}mg</div>
+		<div class="x-small">Total Sugar</div>
+		<div class="accent">{{ item['sugartotal'] }}<span class="dull x-small"> g</span></div>
 	</div>
 	<div class="stat-card">
-		<h4>Sugar</h4>
-		<div class="value">{{ item['sugar'] }}g/100ml</div>
+		<div class="x-small">Avg Price</div>
+		<div class="accent">{{ item['averageprice'] }}<span class="dull x-small"> CHF</span></div>
 	</div>
-	<div class="stat-card">
-		<h4>Total Sugar</h4>
-		<div class="value">{{ item['sugartotal'] }}g</div>
+	<div class="stat-card" title="Caffeine/((Sugar+1)*AvrPrice)">
+		<div class="x-small">Score</div>
+		<div class="accent">{{ item['score'] }}</div>
 	</div>
 </div>
 
@@ -38,15 +43,15 @@
 
 <h3>Stores</h3>
 {% if item['discontinued'] %}
-<p><strong>This product is no longer available. :(</strong></p>
+<p class="dull">This product is no longer available.</p>
 {% else %}
 <div class="table-container">
 	<table id="product-table" class="display compact">
 		<thead>
 			<tr>
 				<th>Store</th>
-				<th class="numeric">Price 1 Unit (CHF)</th>
-				<th class="numeric">Price 1 Pack (CHF)</th>
+				<th class="numeric">Price 1 Unit<br><small>(CHF)</small></th>
+				<th class="numeric">Price 1 Pack<br><small>(CHF)</small></th>
 				<th class="numeric">Units per Pack</th>
 				<th>Comment</th>
 				<th>Last modified</th>
@@ -55,26 +60,25 @@
 		<tbody>
 			{% for store in item['stores'] %}
 			<tr>
-				<td><a href="{{ store['url'] }}" target="_blank" rel="noopener noreferrer">{{ store['name'] }}↗</a></td>
+				<td><a href="{{ store['url'] }}" target="_blank" rel="noopener noreferrer">{{ store['name'] }} ↗</a></td>
 				<td class="numeric">{{ store['price1u'] }}</td>
 				<td class="numeric">{{ store['price'] }}</td>
 				<td class="numeric">{{ store['amount'] }}</td>
 				<td>{{ store['comment'] }}</td>
-				<td>{{ store['date'] }}</td>
+				<td class="dull">{{ store['date'] }}</td>
 			</tr>
 			{% endfor %}
 		</tbody>
 	</table>
 </div>
-<br>
-<em>No contributor behind this site profits from you visiting those links. 'noreferrer' is set.</em>
+{% endif %}
 
 <script>
 $(document).ready(function() {
 	$('#product-table').DataTable({
-		order: [[0, 'asc']], // sort by name by default
+		order: [[0, 'asc']],
 		columnDefs: [
-			{ targets: [1, 2, 3, 4], className: 'numeric' }
+			{ targets: [1, 2, 3], className: 'numeric' }
 		],
 		scrollX: true,
 		paging: false,
@@ -84,6 +88,4 @@ $(document).ready(function() {
 });
 </script>
 
-{% endif %}
-
-{% include "footer_product.jinja2" %}
+{% include "footer.jinja2" %}
