@@ -370,7 +370,10 @@ div.dt-container div.dt-layout-row div.dt-layout-cell.dt-layout-end {
 
 /* score explainer hover menu */
 
-.score-help { cursor: pointer; text-decoration: underline dotted; }
+.score-help {
+	cursor: pointer;
+	text-decoration: underline dotted;
+}
 
 .score-popover {
 	display: none;
@@ -384,7 +387,9 @@ div.dt-container div.dt-layout-row div.dt-layout-cell.dt-layout-end {
 	font-size: var(--fs-x-small);
 }
 
-.score-popover.visible { display: block; }
+.score-popover.visible {
+	display: block;
+}
 
 /* mobile */
 
