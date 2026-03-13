@@ -68,5 +68,20 @@
 			
 			html.classList.add(prefers);
 			html.setAttribute('data-bs-theme', prefers);
+
+			// Score explainer hover menu
+			var $pop = $('<div class="score-popover">' +
+				'This is a custom score calculated by matelab.ch<br><br>' +
+				'Products that have more caffeine, less sugar, and are cheaper score higher.<br><br>'+
+				'The formula is:<br>'+
+				'<code>Caffeine / ((Sugar + 1) x Avg. Price)</code>' +
+				'</div>').appendTo('body');
+
+			$(document).on('mouseenter', '.score-help', function() {
+				var r = this.getBoundingClientRect();
+				$pop.css({ top: r.bottom + 6, left: Math.max(8, r.right - $pop.outerWidth()) }).addClass('visible');
+			}).on('mouseleave', '.score-help', function() {
+				$pop.removeClass('visible');
+			});
 		});
 	</script>

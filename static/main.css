@@ -368,6 +368,24 @@ div.dt-container div.dt-layout-row div.dt-layout-cell.dt-layout-end {
 	}
 }
 
+/* score explainer hover menu */
+
+.score-help { cursor: pointer; text-decoration: underline dotted; }
+
+.score-popover {
+	display: none;
+	position: fixed;
+	z-index: 200;
+	background: var(--bg);
+	border: 1px solid var(--border);
+	border-radius: var(--border-radius);
+	padding: var(--space-default);
+	max-width: min(300px, calc(100vw - 2rem));
+	font-size: var(--fs-x-small);
+}
+
+.score-popover.visible { display: block; }
+
 /* mobile */
 
 @media (max-width: 767px) {
