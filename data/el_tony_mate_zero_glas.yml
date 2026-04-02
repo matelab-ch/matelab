@@ -43,25 +43,25 @@ stores:
         price: 26.40
         amount: 12
         date: 2026-04-02
-        comment: "12x EW"
+        comment: "EW"
     -
         name: "Pepillo"
         url: "https://www.pepillo.ch/kaufen/el-tony-mate-zero-24-x-33-cl-mw/"
         price: 52.80
         amount: 24
         date: 2026-04-02
-        comment: "24x MW (Mehrweg), Zürich Auslieferung"
+        comment: "MW (Mehrweg), Zürich Auslieferung"
     -
         name: "Paul Ullrich"
         url: "https://ullrich.ch/de/el-tony-mate-zero-ka-12x-ew-33cl/106628/"
         price: 2.20
         amount: 1
         date: 2026-04-02
-        comment: "12x EW"
+        comment: "EW"
     -
         name: "Paul Ullrich"
         url: "https://ullrich.ch/de/el-tony-mate-zero-ha-24x-mw-33cl/106629/"
         price: 2.30
         amount: 1
         date: 2026-04-02
-        comment: "24x MW (Mehrweg)"
+        comment: "MW (Mehrweg)"
