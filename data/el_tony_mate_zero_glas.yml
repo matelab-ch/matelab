@@ -1,0 +1,60 @@
+draft: false
+brand: "El Tony"
+product: "Mate Zero"
+size: 330
+packaging: Glass
+caffeine: 26
+
+# Technically it has 0.1g/100ml, but this spoils the "fight" against other 0 sugar products
+sugar: 0 
+
+ingredients:
+    - "Aufguss aus Mate 96% (Wasser, Mate)"
+    - "3% Zitronensaft aus Zironensaftkonzentrat"
+    - "Kohlensäure"
+    - "0,1% Guaranaextrakt"
+    - "Aroma"
+    - "Süssungsmittel: Acesulfam-K, Sucralose, Cyclamat"
+stores:
+    -
+        name: "Brunner Getränke"
+        url: "https://www.brunnergetraenke.ch/de/shop/Factsheet/10010386/False/factsheet.pdf"
+        price: 1.95
+        amount: 1
+        date: 2026-04-02
+        comment: "Bestellartikel"
+    -
+        name: "Schürch Getränke"
+        url: "https://www.schurch.ch/shop/softdrinks/el-tony-mate-zero"
+        price: 1.80
+        amount: 1
+        date: 2026-04-02
+        comment: "-"
+    -
+        name: "SCHÜWO Trink-Kultur"
+        url: "https://www.schuewo.ch/shop/softdrinks/el-tony-mate-zero-33-cl-mehrweg-flasche"
+        price: 1.75
+        amount: 1
+        date: 2026-04-02
+        comment: "-"
+    -
+        name: "Pepillo"
+        url: "https://www.pepillo.ch/kaufen/el-tony-mate-zero-12-x-33-cl-ew/"
+        price: 26.40
+        amount: 12
+        date: 2026-04-02
+        comment: "-"
+    -
+        name: "Paul Ullrich"
+        url: "https://ullrich.ch/de/el-tony-mate-zero-ka-12x-ew-33cl/106628/"
+        price: 2.20
+        amount: 1
+        date: 2026-04-02
+        comment: "12x EW"
+    -
+        name: "Paul Ullrich"
+        url: "https://ullrich.ch/de/el-tony-mate-zero-ha-24x-mw-33cl/106629/"
+        price: 2.30
+        amount: 1
+        date: 2026-04-02
+        comment: "24x MW (Mehrweg)"
