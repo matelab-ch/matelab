@@ -194,6 +194,11 @@ div.dt-container div.dt-layout-row div.dt-layout-cell.dt-layout-end {
 	margin-bottom: var(--space-half);
 }
 
+th.string,
+td.string {
+	text-align: right !important;
+}
+
 /* filter bar */
 
 .filter-bar {

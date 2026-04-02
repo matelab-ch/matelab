@@ -29,7 +29,7 @@
 					<span class="column-toggle-label">Size</span>
 				</label>
 				<label class="column-toggle">
-					<input type="checkbox" class="toggle-column" data-column="2">
+					<input type="checkbox" class="toggle-column" data-column="2" checked>
 					<span class="column-toggle-label">Packaging</span>
 				</label>
 				<label class="column-toggle">
@@ -83,7 +83,7 @@
 			<tr>
 				<th>Product</th>
 				<th class="numeric">Size<br><small>(ml)</small></th>
-				<th class="numeric">Packaging</th>
+				<th class="string">Packaging</th>
 				<th class="numeric">Avg. Price<br><small>(CHF)</small></th>
 				<th class="numeric">Price/100ml<br><small>(CHF)</small></th>
 				<th class="numeric">Caffeine<br><small>(mg/100ml)</small></th>
@@ -106,7 +106,7 @@
 					{% if item.discontinued %}<span class="dull small nodec"> No longer available</span>{% endif %}
 				</td>
 				<td class="numeric">{{ item["size"] }}</td>
-				<td class="numeric">{{ item["packaging"] }}</td>
+				<td class="string">{{ item["packaging"] }}</td>
 				<td class="numeric">{{ item["averageprice"] }}</td>
 				<td class="numeric">{{ item["price100ml"] }}</td>
 				<td class="numeric">{{ item["caffeine"] }}</td>
@@ -128,9 +128,10 @@ $(document).ready(function() {
 	var table = $('#data-table').DataTable({
 		order: [[0, 'asc']], // sort by name by default
 		columnDefs: [
-			{ targets: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], className: 'numeric' },
+			{ targets: [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], className: 'numeric' },
+			{ targets: [2], className: 'string' },
 			// Hide certain columns by default
-			{ targets: [2, 3, 4, 5, 7, 8, 9, 11], visible: false }
+			{ targets: [3, 4, 5, 7, 8, 9, 11], visible: false }
 		],
 		scrollX: true,
 		paging: false,
