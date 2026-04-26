@@ -56,7 +56,7 @@ def render_products(env: jinja2.Environment, render_drafts: bool):
     product_filepaths = glob.glob(f"{DATA_DIR}/*.yml") + glob.glob(f"{DATA_DIR}/*.yaml")
 
     for product_filepath in product_filepaths:
-        with open(product_filepath) as product_raw:
+        with open(product_filepath, encoding="utf-8") as product_raw:
             product_yaml = yaml.safe_load(product_raw)
 
         if render_drafts is False and product_yaml.get("draft", False):
@@ -144,7 +144,7 @@ def render_products(env: jinja2.Environment, render_drafts: bool):
         product_yaml["filename"] = os.path.basename(product_filepath)
 
         # render product page brand_product_packaging.html
-        with open(f"{OUTPUT_DIR}/products/{site_url}", "w") as product_out:
+        with open(f"{OUTPUT_DIR}/products/{site_url}", "w", encoding="utf-8") as product_out:
             product_out.write(
                 product_template.render(
                     item=product_yaml,
@@ -164,7 +164,7 @@ def render_index(env: jinja2.Environment, products: Iterable[Dict]):
     print("[+] Rendering 'index.html'")
     main_template = env.get_template("main.jinja2")
 
-    with open(f"{OUTPUT_DIR}/index.html", "w") as main_out:
+    with open(f"{OUTPUT_DIR}/index.html", "w", encoding="utf-8") as main_out:
         main_out.write(
             main_template.render(
                 products=products,
@@ -180,7 +180,7 @@ def render_sitemap(env: jinja2.Environment, urls: Iterable[str]):
 
     print("[+] Rendering 'sitemap.xml'")
     sitemap_template = env.get_template("sitemap.jinja2")
-    with open(f"{OUTPUT_DIR}/sitemap.xml", "w") as sitemap_out:
+    with open(f"{OUTPUT_DIR}/sitemap.xml", "w", encoding="utf-8") as sitemap_out:
         sitemap_out.write(
             sitemap_template.render(
                 urls=sorted(urls),
@@ -201,7 +201,7 @@ def render_rss(env: jinja2.Environment, products: Iterable[Dict]):
         products, key=lambda product: product["newest_update"], reverse=True
     )
 
-    with open(f"{OUTPUT_DIR}/feed.xml", "w") as rss_out:
+    with open(f"{OUTPUT_DIR}/feed.xml", "w", encoding="utf-8") as rss_out:
         rss_out.write(
             rss_template.render(
                 products=sorted_products,
