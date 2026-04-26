@@ -1,0 +1,24 @@
+draft: false
+discontinued: false
+brand: Denner
+product: Mate
+size: 330
+packaging: Can
+caffeine: 23 
+sugar: 5.6 
+ingredients: 
+    - "Infusion de maté (91%) (Eau, maté)"
+    - "Sucre"
+    - "Jus de citron à base de concentré 3%"
+    - "Acide carbonique"
+    - "Extrait de guarana (0.2%)"
+    - "Acide citrique"
+    - "Arôme naturel"
+stores: # where to buy
+    -
+        name: Denner
+        url: https://www.denner.ch/fr/actions/denner-mate-canette~p1104100?variant=07be351a-92c1-44cd-93d4-425bc9af3fbc # direct product URL or URL to store (NO REFERRAL LINKS), ex. "https://somesite/products/mate.html"
+        price: 6 
+        amount: 6
+        date: 2026-04-26
+        comment: "-"
