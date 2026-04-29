@@ -1,0 +1,22 @@
+draft: false
+discontinued: false 
+brand: Mojo
+product: "Mathé BIO Original"
+size: 250
+packaging: Can
+caffeine: 24
+sugar: 4.1
+ingredients:
+    - "Kohlensäurehaltiges Wasser"
+    - "Rohrzucker"
+    - "Yerba Mate (Extrakt)"
+    - "Zitronensaft (Konzentrat)"
+    - "Antioxidans (Zitronensäure)"
+stores: # where to buy
+    -
+        name: Galaxus
+        url: https://www.galaxus.ch/en/s7/product/mojo-mate-bio-original-12-x-25-cl-soft-drinks-54969446
+        price: 29.90
+        amount: 12
+        date: 2026-04-29
+        comment: 
