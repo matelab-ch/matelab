@@ -1,0 +1,30 @@
+draft: true
+discontinued: false
+brand: Falken
+product: Ma-Tee Natürlich
+size: 330
+packaging: Can
+caffeine: .NAN
+sugar: 5.5
+ingredients:
+    - "Matetee 68 %"
+    - "Schwarztee 23 %"
+    - "Rohrohzucker"
+    - "Zitronensaft 2.8 %"
+    - "Limettensaft 0.8 % aus Konzentrat"
+    - "Kohlensäure"
+stores: # where to buy
+    -
+        name: Falken Brauerei AG
+        url: https://www.falken.ch/shop/biere/falken-ma-tee/261
+        price: 1.50
+        amount: 1
+        date: 2026-05-29
+        comment: Versand kostet 15 CHF
+    -
+        name: Rio Getränkemark Wallisellen
+        url: https://www.rio-getraenke.ch/falken-ma-tee-dose-6-pack-33cl_00018129
+        price: 10.50
+        amount: 6
+        date: 2026-05-29
+        comment: "-"
