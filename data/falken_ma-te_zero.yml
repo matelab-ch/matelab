@@ -1,0 +1,32 @@
+draft: true
+discontinued: false
+brand: Falken
+product: Ma-Tee Zero
+size: 330
+packaging: Can
+caffeine: .NAN
+sugar: 0
+ingredients:
+    - "Matetee 68 %"
+    - "Schwarztee 23 %"
+    - "Zitronensaft"
+    - "Limettensaft aus Konzentrat"
+    - "Kohlensäure"
+    - "Zitronenöl"
+    - "Süssungsmittel E-952, E-950, E-954, E-955"
+    - "Natürliches Aroma"
+stores: # where to buy
+    -
+        name: Falken Brauerei AG
+        url: https://www.falken.ch/shop/biere/falken-ma-tee-zero/320
+        price: 1.50
+        amount: 1
+        date: 2026-05-29
+        comment: Versand kostet 15 CHF
+    -
+        name: Rio Getränkemark Wallisellen
+        url: https://www.rio-getraenke.ch/falken-ma-tee-zero-dose-6-pack-33cl_00018133
+        price: 10.50
+        amount: 6
+        date: 2026-05-29
+        comment: "-"
