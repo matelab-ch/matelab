@@ -1,0 +1,24 @@
+draft: false
+discontinued: false
+brand: "Freeway"
+product: "Mate Lime"
+size: 330
+packaging: "Can"
+caffeine: 23
+sugar: 5.5
+ingredients:
+    - "Aufguss aus Mate (Wasser, Mate)"
+    - "Zucker"
+    - "Zitronensaft aus Konzentrat"
+    - "Kohlensäure"
+    - "Guaranaextrakt"
+    - "0.05% natürliches Limettenaroma"
+    - "Säurungsmittel: Citronensäure"
+stores:
+    -
+        name: "Lidl"
+        url: "https://sortiment.lidl.ch/de/catalog/product/view/id/21499/s/mate-lime-5114169/ "
+        price: 0.99
+        amount: 1
+        date: 2026-06-17
+        comment: "-"
