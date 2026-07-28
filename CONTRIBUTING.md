@@ -1,3 +1,5 @@
+![](https://github.com/matelab-ch/.github/blob/main/profile/po.png)
+
 # Contributing
 
 ## Adding a Missing Product
