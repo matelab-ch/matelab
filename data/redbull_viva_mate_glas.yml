@@ -21,3 +21,10 @@ stores:
         amount: 24
         date: 2023-01-19
         comment: "-"
+    -
+        name: "Feldschlösschen Getränkeshop"
+        url: "https://feldschloesschen.ch/shop/products/organics-by-red-bull-viva-mate-250ml-glasflasche-24-pack"
+        price: 44.20
+        amount: 24
+        date: 2026-09-18
+        comment: "-"

@@ -20,3 +20,10 @@ stores:
         amount: 12
         date: 2023-05-07
         comment: "-"
+    -
+        name: "Soleegusto"
+        url: "https://soleegusto.ch/shop/brio-mate-pear-morning-blend-bio-33cl-in-glaschflasche-kiste-12x33cl-2/"
+        price: 34.80
+        amount: 12
+        date: 2026-09-18
+        comment: "-"

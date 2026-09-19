@@ -17,3 +17,10 @@ stores:
         amount: 24
         date: 2023-05-03
         comment: "-"
+    -
+        name: "Drink-Shop.ch"
+        url: "https://www.drink-shop.ch/en/country-of-origin/schweiz/8296/pri-mate-schweizer-bio-mate-still-glas-kiste-24-x-330-ml-schweiz"
+        price: 69.90
+        amount: 24
+        date: 2026-09-18
+        comment: "-"

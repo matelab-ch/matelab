@@ -26,3 +26,10 @@ stores:
         amount: 1
         date: 2023-01-12
         comment: "-"
+    -
+        name: "Pepillo"
+        url: "https://www.pepillo.ch/kaufen/charitea-mate-20-x-33-cl-mw-flasche/"
+        price: 47.00
+        amount: 20
+        date: 2026-09-18
+        comment: "-"

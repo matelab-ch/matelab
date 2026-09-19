@@ -19,3 +19,10 @@ stores:
         amount: 24
         date: 2025-02-04
         comment: "-"
+    -
+        name: "Bieronlineshop.ch"
+        url: "https://bieronlineshop.ch/en/club-mate-33-cl-can"
+        price: 1.90
+        amount: 1
+        date: 2026-09-18
+        comment: "-"

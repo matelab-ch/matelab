@@ -28,3 +28,24 @@ stores: # where to buy
         amount: 6
         date: 2026-05-29
         comment: "-"
+    -
+        name: Drink-Shop.ch
+        url: https://www.drink-shop.ch/de/soft-drinks/8793/falken-brauerei-ma-tee-dose-330-ml-schweiz
+        price: 1.90
+        amount: 1
+        date: 2026-09-18
+        comment: "-"
+    -
+        name: Bieronlineshop.ch
+        url: https://bieronlineshop.ch/falken-ma-tee-33-cl-dose
+        price: 2.20
+        amount: 1
+        date: 2026-09-18
+        comment: "-"
+    -
+        name: SCHÜWO Trink-Kultur
+        url: https://www.schuewo.ch/shop/softdrinks/ma-tee-falken-100-rein-natuerliches-mate-33-cl-dose-6-pack
+        price: 1.75
+        amount: 6
+        date: 2026-09-18
+        comment: "-"

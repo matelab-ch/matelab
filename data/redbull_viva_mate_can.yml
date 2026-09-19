@@ -28,3 +28,10 @@ stores:
         amount: 24
         date: 2023-01-19
         comment: "-"
+    -
+        name: "Galaxus"
+        url: "https://www.galaxus.ch/de/s7/product/red-bull-organics-viva-mate-24-x-25-cl-softdrink-14617044"
+        price: 60.00
+        amount: 24
+        date: 2026-09-18
+        comment: "-"

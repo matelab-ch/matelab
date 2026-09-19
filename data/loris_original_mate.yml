@@ -18,3 +18,10 @@ stores:
         amount: 24
         date: 2023-05-07
         comment: "-"
+    -
+        name: "Gedex Getränke AG"
+        url: "https://shop.gedex.ch/pi/Alkoholfreie-Getraenke/Diverse-Alkoholfreie-Getraenke/Loris-Mate-MW-33-cl.html"
+        price: 2.50
+        amount: 1
+        date: 2026-09-18
+        comment: "-"

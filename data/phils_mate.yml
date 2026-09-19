@@ -18,3 +18,10 @@ stores:
         amount: 1 
         date: 2023-09-20
         comment: "-"
+    -
+        name: "eis-tee.ch"
+        url: "https://www.eis-tee.ch/product/phils-bio-matetee-mit-limette-pet-flasche/"
+        price: 1.50
+        amount: 1
+        date: 2026-09-18
+        comment: "-"

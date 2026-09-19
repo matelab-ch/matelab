@@ -26,3 +26,10 @@ stores:
         amount: 1
         date: 2023-01-19
         comment: "-"
+    -
+        name: "ayco.ch"
+        url: "https://ayco.ch/lebensmittel/getraenke/energy-drinks/10475/energy-mate-guarana-bio-250ml-biotta"
+        price: 2.90
+        amount: 1
+        date: 2026-09-18
+        comment: "-"

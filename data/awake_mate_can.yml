@@ -29,3 +29,10 @@ stores:
         amount: 24
         date: 2026-03-16
         comment: "-"
+    -
+        name: "Feldschlösschen Getränkeshop"
+        url: "https://feldschloesschen.ch/shop/products/awake-mate-lemon-33cl"
+        price: 66.90
+        amount: 24
+        date: 2026-09-18
+        comment: "-"

@@ -25,3 +25,10 @@ stores:
         amount: 24
         date: 2026-09-18
         comment: "-"
+    -
+        name: "Wittich Weine und Biere AG"
+        url: "https://www.biershop-wittich.ch/de/shop/detail/8179/loris_mate_roasted_dose.htm"
+        price: 2.80
+        amount: 1
+        date: 2026-09-18
+        comment: "-"

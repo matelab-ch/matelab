@@ -18,7 +18,7 @@ stores:
     -
         name: "okpunktstrich.ch"
         url: "https://www.okpunktstrich.ch/de/produkte/ok-mate-kiwigold-2598?lang=de"
-        price: 1
-        amount: 1
-        date: 2026-08-22
+        price: 2
+        amount: 2
+        date: 2026-09-19
         comment: ""

@@ -21,3 +21,17 @@ stores:
         amount: 12
         date: 2023-05-07
         comment: "-"
+    -
+        name: "Drink-Shop.ch"
+        url: "https://www.drink-shop.ch/en/country-of-origin/schweiz/6903/brio-mate-ginger-natural-energy-glasflasche-kiste-24-x-330-ml-schweiz"
+        price: 69.60
+        amount: 24
+        date: 2026-09-18
+        comment: "-"
+    -
+        name: "Soleegusto"
+        url: "https://soleegusto.ch/shop/brio-mate-ginger-sparkling-bio-33cl-in-glaschflasche-kiste-12x33cl/"
+        price: 34.80
+        amount: 12
+        date: 2026-09-18
+        comment: "-"

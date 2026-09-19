@@ -27,3 +27,10 @@ stores:
         amount: 1
         date: 2024-11-20
         comment: "-"
+    -
+        name: "Lieferteam.ch"
+        url: "https://lieferteam.ch/products/club-mate-beere-20-x-0-5l"
+        price: 35.90
+        amount: 20
+        date: 2026-09-18
+        comment: "-"

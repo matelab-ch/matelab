@@ -19,3 +19,10 @@ stores:
         amount: 1
         date: 2023-01-12
         comment: "-"
+    -
+        name: "SCHÜWO Trink-Kultur"
+        url: "https://www.schuewo.ch/shop/softdrinks/club-mate-kraftstoff-ice-tea-50cl-mw"
+        price: 1.60
+        amount: 1
+        date: 2026-09-18
+        comment: "-"

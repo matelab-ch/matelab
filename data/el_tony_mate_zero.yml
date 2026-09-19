@@ -23,3 +23,17 @@ stores:
         amount: 6
         date: 2026-01-14
         comment: ""
+    -
+        name: "Feldschlösschen Getränkeshop"
+        url: "https://feldschloesschen.ch/shop/products/el-tony-mate-zero-energy-drink-33cl-24-dosenpack"
+        price: 51.70
+        amount: 24
+        date: 2026-09-18
+        comment: "-"
+    -
+        name: "Drinks of the World"
+        url: "https://beerworld.ch/produkt/el-tony-mate-zero/"
+        price: 2.90
+        amount: 1
+        date: 2026-09-18
+        comment: "-"

@@ -19,3 +19,10 @@ stores:
         amount: 1
         date: 2023-01-12
         comment: "-"
+    -
+        name: "Lieferteam.ch"
+        url: "https://lieferteam.ch/products/club-mate-winter-edition-20-x-0-5l-glas-gratis-lieferung"
+        price: 35.90
+        amount: 20
+        date: 2026-09-18
+        comment: "-"

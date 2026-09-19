@@ -36,3 +36,10 @@ stores:
         amount: 1
         date: 2023-01-12
         comment: "-"
+    -
+        name: "Kitchencorner"
+        url: "https://kitchencorner.ch/de/el-tony-mate-ginger-tee-24-x-330ml"
+        price: 39.90
+        amount: 24
+        date: 2026-09-18
+        comment: "-"

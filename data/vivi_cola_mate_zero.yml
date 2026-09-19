@@ -19,3 +19,10 @@ stores:
         amount: 1
         date: 2026-03-09
         comment: "-"
+    -
+        name: "Niederhäusern"
+        url: "https://www.niederhausern.ch/shop/suessgetraenke-und-saefte/vivi-mate-zerovicollective-ag"
+        price: 2.40
+        amount: 1
+        date: 2026-09-18
+        comment: "-"

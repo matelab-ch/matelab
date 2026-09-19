@@ -30,3 +30,10 @@ stores: # where to buy
         amount: 6
         date: 2026-05-29
         comment: "-"
+    -
+        name: Zur Rose Shop
+        url: https://www.zurrose-shop.ch/de/ma-tee-zero-24-x-330-ml/dp/JTY5TL7M
+        price: 43.10
+        amount: 24
+        date: 2026-09-18
+        comment: "-"

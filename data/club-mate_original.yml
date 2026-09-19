@@ -26,3 +26,10 @@ stores:
         amount: 1
         date: 2023-09-16
         comment: "-"
+    -
+        name: "SCHÜWO Trink-Kultur"
+        url: "https://www.schuewo.ch/shop/softdrinks/club-mate-original-ice-tea-50-cl-mw"
+        price: 1.80
+        amount: 1
+        date: 2026-09-18
+        comment: "-"

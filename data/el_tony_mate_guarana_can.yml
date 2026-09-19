@@ -35,3 +35,10 @@ stores:
         amount: 1
         date: 2023-01-12
         comment: "-"
+    -
+        name: "ZWG"
+        url: "https://www.zwg.ch/de/shop/funktionale-getraenke/el-tony-mate-guarana-460279"
+        price: 1.95
+        amount: 1
+        date: 2026-09-18
+        comment: "-"

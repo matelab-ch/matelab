@@ -33,3 +33,17 @@ stores:
         amount: 4
         date: 2025-07-19
         comment: "-"
+    -
+        name: "Kanela"
+        url: "https://kanela.ch/de/marken/puerto-mate"
+        price: 15.90
+        amount: 8
+        date: 2026-09-18
+        comment: "-"
+    -
+        name: "Focus Shop"
+        url: "https://focusshop.ch/brands/puerto-mate"
+        price: 14.55
+        amount: 8
+        date: 2026-09-18
+        comment: "-"

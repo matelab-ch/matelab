@@ -18,3 +18,10 @@ stores:
         amount: 1
         date: 2026-03-09
         comment: "-"
+    -
+        name: "Drinks of the World"
+        url: "https://beerworld.ch/produkt/vivi-mate/"
+        price: 3.50
+        amount: 1
+        date: 2026-09-18
+        comment: "-"

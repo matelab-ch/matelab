@@ -20,3 +20,17 @@ stores:
         amount: 12
         date: 2023-05-07
         comment: "-"
+    -
+        name: "Drink-Shop.ch"
+        url: "https://www.drink-shop.ch/en/country-of-origin/schweiz/6893/brio-mate-mint-lemon-natural-energy-glasflasche-kiste-24-x-330-ml-schweiz"
+        price: 69.60
+        amount: 24
+        date: 2026-09-18
+        comment: "-"
+    -
+        name: "Siradis"
+        url: "https://www.siradis.ch/en/product/brio-mate-mint-lemon-330ml/"
+        price: 2.90
+        amount: 1
+        date: 2026-09-18
+        comment: "-"
