@@ -2,12 +2,11 @@
 
 <div class="product-hero">
 	<div>
-		<h2>{{ item['brand'] }} <span class="dull">{{ item['product'] }}</span></h2>
-		<p class="dull small">{{ item['size'] }}ml; {{ item['packaging'] }}; <a class="nav-link small" href="https://github.com/matelab-ch/matelab/blob/main/data/{{ item['filename'] }}" target="_blank">View on GitHub ↗</a></p>
+		<h2>{{ item['brand'] }} {{ item['product'] }} <span class="dull">({{ item['size'] }}ml, {{ item['packaging'] }})</span></h2>
 	</div>
 </div>
 
-<div class="stats-grid">
+<div class="stats-grid mono">
 	<div class="stat-card">
 		<div class="x-small">Caffeine</div>
 		<div class="accent">{{ item['caffeine'] }}<span class="dull x-small"> mg/100ml</span></div>
@@ -34,6 +33,8 @@
 	</div>
 </div>
 
+<a class="nav-link small mono" href="https://github.com/matelab-ch/matelab/blob/main/data/{{ item['filename'] }}" target="_blank">View this product on GitHub ↗</a>
+
 <h3>Ingredients</h3>
 <ul>
 	{% for ingredient in item['ingredients'] %}
@@ -49,7 +50,7 @@
 	<table id="product-table" class="display compact">
 		<thead>
 			<tr>
-				<th>Store</th>
+				<th>Name</th>
 				<th class="numeric">Price 1 Unit<br><small>(CHF)</small></th>
 				<th class="numeric">Price 1 Pack<br><small>(CHF)</small></th>
 				<th class="numeric">Units per Pack</th>

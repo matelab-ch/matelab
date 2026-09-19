@@ -35,14 +35,9 @@
 			<div id="header-left">
 				<img id="header-image" src="/logo_transparent.png">
 				<div>
-					<h1><a href="/">matelab</a></h1>
-					<p class="dull small desktoponly">The Swiss Mate Index</p>
+					<h1 class="large"><a class="nodec" href="/">matelab</a></h1>
+					<span class="mono dull x-small desktoponly">The Swiss Mate Index</span>
 				</div>
-			</div>
-			<div id="header-meta" class="desktoponly dull x-small">
-				{% if products is defined %}
-				<span>{{ now().strftime("%Y-%m-%d") }}; {{ products|length }} products</span>
-				{% endif %}
 			</div>
 			<div id="nav-menu">
 				<a class="nav-link" href="https://github.com/matelab-ch/matelab" target="_blank">
@@ -66,7 +61,7 @@
 			html.setAttribute('data-bs-theme', prefers);
 
 			// Score explainer hover menu
-			var $pop = $('<div class="score-popover">' +
+			var $pop = $('<div class="score-popover x-small">' +
 				'This is a custom score calculated by matelab.ch<br><br>' +
 				'Products that have more caffeine, less sugar, and are cheaper score higher.<br><br>'+
 				'The formula is:<br>'+
