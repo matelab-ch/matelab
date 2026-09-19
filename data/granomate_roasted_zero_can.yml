@@ -1,0 +1,21 @@
+draft: true # caffeine content missing
+discontinued: false
+brand: "Grano Maté"
+product: "Roasted BIO Zero"
+size: 330
+packaging: Can
+caffeine: 0
+sugar: 0
+ingredients:
+    - "Kohlensäurehaltiger Kaltaufguss von Mate (Wasser, BIO-Mate aus Argentinien, BIO-geröstetes Mate aus Brasilien)"
+    - "BIO-Limettensaft"
+    - "BIO-Stevia-Pulver"
+    - "Säuerungsmittel: Zitronensäure"
+stores:
+    -
+        name: "Grano Maté"
+        url: "https://granomate.ch/products/grano-mate-roasted-bio-zero"
+        price: 45.60
+        amount: 12
+        date: 2026-09-18
+        comment: "-"

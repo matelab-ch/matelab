@@ -1,0 +1,22 @@
+draft: true # caffeine content missing
+discontinued: false
+brand: "Super Natural Club"
+product: "Super Mate Original BIO"
+size: 330
+packaging: Can
+caffeine: 0
+sugar: 2.9
+ingredients:
+    - "Kalter Aufguss aus Bio-Pflanzen (95.5%) (Wasser, Mate, Apfel, Hagebutte, Orange, ätherische Öle (Zitrone, Orange, Mandarine, Grapefruit, Bergamotte), schwarzer Tee, Erdbeerblätter, Schweizer Zitronenverbene)"
+    - "Schweizer Zucker"
+    - "Zitronensaft"
+    - "Antioxidationsmittel: Ascorbinsäure (Vitamin C)"
+    - "Kohlensäure"
+stores:
+    -
+        name: "Super Natural Club"
+        url: "https://www.supernaturalclub.ch/de/products/super-mate-bio"
+        price: 69.60
+        amount: 24
+        date: 2026-09-18
+        comment: "-"

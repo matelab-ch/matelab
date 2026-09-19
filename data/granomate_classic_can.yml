@@ -1,0 +1,20 @@
+draft: true # caffeine content missing
+discontinued: false
+brand: "Grano Maté"
+product: "Classic BIO"
+size: 330
+packaging: Can
+caffeine: 0
+sugar: 3.5
+ingredients:
+    - "Kohlensäurehaltiger Kaltaufguss von Mate (Wasser, BIO-Mate aus Argentinien)"
+    - "BIO Rohrzucker"
+    - "Säuerungsmittel: Zitronensäure"
+stores:
+    -
+        name: "Grano Maté"
+        url: "https://granomate.ch/products/grano-mate-classic-bio"
+        price: 42.00
+        amount: 12
+        date: 2026-09-18
+        comment: "-"

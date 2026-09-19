@@ -1,0 +1,22 @@
+draft: true # caffeine content missing
+discontinued: false
+brand: "Grano Maté"
+product: "Ginger BIO"
+size: 330
+packaging: Glass
+caffeine: 0
+sugar: 3.5
+ingredients:
+    - "Kohlensäurehaltiger Kaltaufguss von Mate (Wasser, BIO-Mate aus Argentinien)"
+    - "BIO-Rohrzucker"
+    - "BIO-Ingwer Saft"
+    - "BIO-Limettensaft"
+    - "Säuerungsmittel: Zitronensäure"
+stores:
+    -
+        name: "Grano Maté"
+        url: "https://granomate.ch/products/grano-mate-ginger-bio"
+        price: 45.60
+        amount: 12
+        date: 2026-09-18
+        comment: "-"

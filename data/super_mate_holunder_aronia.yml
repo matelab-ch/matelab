@@ -1,0 +1,26 @@
+draft: true # caffeine content missing
+discontinued: false
+brand: "Super Natural Club"
+product: "Super Mate Holunderblüten & Aronia BIO"
+size: 330
+packaging: Can
+caffeine: 0
+sugar: 3.8
+ingredients:
+    - "Kaltaufguss von Bio-Kräutern (92.5%) (Wasser, Mate)"
+    - "Zucker (CH/DE)"
+    - "Aroniasaft 2% (CH)"
+    - "Zitronensaft"
+    - "Holunderblütenextrakt 0.2% (CH)"
+    - "Mateextrakt 0.1%"
+    - "Antioxidationsmittel: Ascorbinsäure (Vitamin C)"
+    - "Säuerungsmittel: Zitronensäure"
+    - "Kohlensäure"
+stores:
+    -
+        name: "Super Natural Club"
+        url: "https://www.supernaturalclub.ch/de/products/super-mate-fleurs-de-sureau-aronia-bio"
+        price: 69.60
+        amount: 24
+        date: 2026-09-18
+        comment: "-"
