@@ -6,7 +6,7 @@ packaging: Can
 caffeine: 22
 
 # Technically it has 0.5g/100ml, but this spoils the "fight" against other 0 sugar products
-sugar: 0 
+sugar: 0
 
 ingredients:
     - "Wasser"
@@ -23,6 +23,6 @@ stores:
         name: "okpunktstrich.ch"
         url: "https://www.okpunktstrich.ch/de/produkte/ok-mate-zero-2551?lang=de"
         price: 2
-        amount: 2
+        amount: 1
         date: 2026-09-19
         comment: ""
