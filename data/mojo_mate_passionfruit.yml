@@ -1,0 +1,29 @@
+draft: true
+discontinued: false
+brand: Mojo
+product: "Maté BIO Passionfruit"
+size: 250
+packaging: Can
+caffeine: 18 •# FIXME unsure
+sugar: 4.8
+ingredients:
+    - "Kohlensäurehaltiges Wasser"
+    - "Rohrzucker"
+    - "Maracujasaft (7%)"
+    - "Yerba Mate Extrakt (2.2%)"
+    - "Antioxidans (Zitronensäure)"
+stores:
+    -
+        name: Kanela
+        url: https://kanela.ch/products/mojo-mate-passionsfrucht-sparkling-12x250ml
+        price: 29.90
+        amount: 12
+        date: 2026-09-18
+        comment: "-"
+    -
+        name: Zur Rose Shop
+        url: https://www.zurrose-shop.ch/de/passionsfrucht-bio-12-x-250-ml/dp/10ZP95FX
+        price: 32.30
+        amount: 12
+        date: 2026-09-18
+        comment: "-"
