@@ -4,7 +4,7 @@ brand: "Super Natural Club"
 product: "Super Mate Holunderblüten & Aronia BIO"
 size: 330
 packaging: Can
-caffeine: 0
+caffeine: 20 #FIXME
 sugar: 3.8
 ingredients:
     - "Kaltaufguss von Bio-Kräutern (92.5%) (Wasser, Mate)"

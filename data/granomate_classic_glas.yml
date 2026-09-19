@@ -4,7 +4,7 @@ brand: "Grano Maté"
 product: "Classic BIO"
 size: 330
 packaging: Glass
-caffeine: 0
+caffeine: 20 #FIXME
 sugar: 3.5
 ingredients:
     - "Kohlensäurehaltiger Kaltaufguss von Mate (Wasser, BIO-Mate aus Argentinien)"
