@@ -1,5 +1,5 @@
-draft: false
-discontinued: false 
+draft: true
+discontinued: false
 brand: Mojo
 product: "Mathé BIO Original"
 size: 250
@@ -19,4 +19,4 @@ stores: # where to buy
         price: 29.90
         amount: 12
         date: 2026-04-29
-        comment: 
+        comment:
