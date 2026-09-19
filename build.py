@@ -44,7 +44,7 @@ def prepare_output_dir():
         shutil.copy(file, OUTPUT_DIR)
 
 
-def render_products(env: jinja2.Environment, render_drafts: bool):
+def render_products(env: jinja2.Environment):
     """
     Renders all products in ./data to their individual pages
     """
@@ -59,9 +59,9 @@ def render_products(env: jinja2.Environment, render_drafts: bool):
         with open(product_filepath, encoding="utf-8") as product_raw:
             product_yaml = yaml.safe_load(product_raw)
 
-        if render_drafts is False and product_yaml.get("draft", False):
+        if product_yaml.get("draft", False):
             print(
-                f"[-] Skipping draft {product_yaml['brand']} {product_yaml['product']} ({product_yaml['packaging']})"
+                f"    Skipping draft {product_yaml['brand']} {product_yaml['product']} ({product_yaml['packaging']})"
             )
             continue
 
@@ -230,7 +230,7 @@ def gather_sitemap_urls():
     ]
 
 
-def main(args):
+def main():
     try:
         prepare_output_dir()
 
@@ -238,7 +238,7 @@ def main(args):
             loader=jinja2.FileSystemLoader(f"{SCRIPT_DIR}/templates/")
         )
 
-        products = render_products(env, render_drafts=args.drafts)
+        products = render_products(env)
         render_index(env, products)
 
         urls = gather_sitemap_urls()
