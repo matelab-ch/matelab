@@ -2,6 +2,17 @@
 
 # Contributing
 
+## Dev Setup
+
+To build and preview the site locally, you can use [uv](https://docs.astral.sh/uv/getting-started/installation/) and the built-in HTTP server.
+
+```sh
+uv run main.py
+python3 -m http.server -d output 8080
+```
+
+If you have [air](https://github.com/air-verse/air) installed on the other hand, run `air` and preview the site on http://127.0.0.1:9090.
+
 ## Adding a Missing Product
 
 For currently missing products, check out the list of [open issues with the label 'missing product'](https://github.com/matelab-ch/matelab/issues?q=state%3Aopen%20label%3A%22missing%20product%22). To add a new product:
@@ -35,15 +46,4 @@ For currently missing data, check out the list of [open issues with the label 'm
 + Edit the file and submit your changes via a pull request.
 	+ Set `discontinued` to `true` but **do not remove store links**.
 	+ Please also send your source (URL, picture of beverage) for me to verify the data.
-
-## Dev Setup
-
-To build and preview the site locally, you can use [uv](https://docs.astral.sh/uv/getting-started/installation/) and the built-in HTTP server.
-
-```sh
-uv run main.py
-python3 -m http.server -d output 8080
-```
-
-If you have [air](https://github.com/air-verse/air) installed, you can benefit from hot-reloading. Just run `air` from the root of the project and view the preview on http://127.0.0.1:9090.
 
