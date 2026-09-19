@@ -65,13 +65,19 @@ def render_products(env: jinja2.Environment, render_drafts: bool):
             )
             continue
 
-        # escape special chars from the filenames and
-        # make lowercase to generate the url, ex. brand_product_packaging.html
-        site_url = re.sub(
-            r"[^a-zA-Z0-9\._]+",
-            "_",
-            f"{product_yaml['brand']}_{product_yaml['product']}_{product_yaml['packaging']}_{product_yaml['size']}.html",
-        ).lower()
+        # escape special chars from the filenames
+        def _slug(value):
+            return (
+                re.sub(r"-+", "-", re.sub(r"[^a-zA-Z0-9]+", "-", str(value)))
+                .strip("-")
+                .lower()
+            )
+
+        # build the url brand-product-packaging-size.html
+        parts = [
+            _slug(product_yaml[k]) for k in ("brand", "product", "packaging", "size")
+        ]
+        site_url = "-".join(p for p in parts if p) + ".html"
         product_yaml.update({"siteurl": site_url})
 
         # average price
@@ -143,8 +149,10 @@ def render_products(env: jinja2.Environment, render_drafts: bool):
         # add the filename to the struct for the "Open on GitHub" link
         product_yaml["filename"] = os.path.basename(product_filepath)
 
-        # render product page brand_product_packaging.html
-        with open(f"{OUTPUT_DIR}/products/{site_url}", "w", encoding="utf-8") as product_out:
+        # render product page brand-product-packaging-size.html
+        with open(
+            f"{OUTPUT_DIR}/products/{site_url}", "w", encoding="utf-8"
+        ) as product_out:
             product_out.write(
                 product_template.render(
                     item=product_yaml,
@@ -223,12 +231,19 @@ def gather_sitemap_urls():
 
 
 def main(args):
-    prepare_output_dir()
+    try:
+        prepare_output_dir()
 
-    env = jinja2.Environment(loader=jinja2.FileSystemLoader(f"{SCRIPT_DIR}/templates/"))
-    products = render_products(env, render_drafts=args.drafts)
-    render_index(env, products)
+        env = jinja2.Environment(
+            loader=jinja2.FileSystemLoader(f"{SCRIPT_DIR}/templates/")
+        )
 
-    urls = gather_sitemap_urls()
-    render_sitemap(env, urls=urls)
-    render_rss(env, products)
+        products = render_products(env, render_drafts=args.drafts)
+        render_index(env, products)
+
+        urls = gather_sitemap_urls()
+        render_sitemap(env, urls=urls)
+        render_rss(env, products)
+
+    except Exception as e:
+        print(f"[!] Error: {e}")
