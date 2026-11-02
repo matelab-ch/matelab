@@ -20,3 +20,10 @@ stores:
         amount: 24
         date: 2026-09-18
         comment: "-"
+    -
+        name: "Migros"
+        url: "https://www.migros.ch/de/product/120283300000"
+        price: 2.50
+        amount: 1 
+        date: 2026-11-02 
+        comment: "-"
