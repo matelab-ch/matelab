@@ -1,10 +1,10 @@
-draft: true # caffeine content missing
+draft: false
 discontinued: false
 brand: "Super Natural Club"
 product: "Super Mate Original BIO"
 size: 330
 packaging: Can
-caffeine: 20 #FIXME
+caffeine: 7
 sugar: 2.9
 ingredients:
     - "Kalter Aufguss aus Bio-Pflanzen (95.5%) (Wasser, Mate, Apfel, Hagebutte, Orange, ätherische Öle (Zitrone, Orange, Mandarine, Grapefruit, Bergamotte), schwarzer Tee, Erdbeerblätter, Schweizer Zitronenverbene)"
@@ -24,6 +24,6 @@ stores:
         name: "Migros"
         url: "https://www.migros.ch/de/product/120283300000"
         price: 2.50
-        amount: 1 
-        date: 2026-11-02 
+        amount: 1
+        date: 2026-11-02
         comment: "-"
