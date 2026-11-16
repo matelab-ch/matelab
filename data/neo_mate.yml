@@ -1,0 +1,25 @@
+draft: true # missing caffeine content / price
+brand: "NEO"
+product: "Mate"
+size: 330
+packaging: "Can"
+caffeine: 20 # Unknown
+
+sugar: 5.5
+
+ingredients:
+    - "Wasser"
+    - "Zucker"
+    - "Zitronensaft aus Konzentrat"
+    - "Mate-Extrakt 0,7%"
+    - "Kohlensäure"
+    - "natürliche Aromen inkl. Koffein"
+    - "Konservierungsstoff: Kaliumsorbat"
+stores:
+    -
+        name: "Transgourmet/Prodega"
+        url: "https://web.transgourmet.ch/de/prodega-easy/catalog/article/604900"
+        price: 0.0 # need account to see price
+        amount: 24
+        date: 2026-11-16
+        comment: ""
