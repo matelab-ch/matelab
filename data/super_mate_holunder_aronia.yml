@@ -1,10 +1,10 @@
-draft: true # caffeine content missing
+draft: false
 discontinued: false
 brand: "Super Natural Club"
 product: "Super Mate Holunderblüten & Aronia BIO"
 size: 330
 packaging: Can
-caffeine: 20 #FIXME
+caffeine: 5
 sugar: 3.8
 ingredients:
     - "Kaltaufguss von Bio-Kräutern (92.5%) (Wasser, Mate)"
@@ -26,8 +26,8 @@ stores:
         comment: "-"
     -
         name: "Migros"
-        url: "https://www.migros.ch/de/product/120283400000" 
-        price: 2.50 
-        amount: 1 
+        url: "https://www.migros.ch/de/product/120283400000"
+        price: 2.50
+        amount: 1
         date: 2026-11-02
         comment: "-"
