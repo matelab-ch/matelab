@@ -18,7 +18,7 @@ def calc_score(caffeine, sugar, avrprice):
     """
     Calculate the matelab score
 
-    caffeine/((sugar+1)/avrprice)
+    caffeine/((sugar+1)*avrprice)
     """
     return round2(float(caffeine) / ((float(sugar) + 1) * float(avrprice)))
 
@@ -99,17 +99,20 @@ def render_products(env: jinja2.Environment):
         product_averageprice = product_prices / len(product_yaml["stores"])
         product_yaml.update({"averageprice": round2(product_averageprice)})
 
+        # size in dl
+        size_dl = product_yaml["size"] / 100
+
         # price100ml
-        product_price100ml = (product_averageprice / product_yaml["size"]) * 100
+        product_price100ml = product_averageprice / size_dl
         product_yaml.update({"price100ml": round2(product_price100ml)})
 
-        # price1mgcaffeine
-        product_price1mgcaffeine = product_averageprice / product_yaml["caffeine"]
-        product_yaml.update({"price1mgcaffeine": round2(product_price1mgcaffeine)})
-
         # total caffein in product
-        product_caffeinetotal = product_yaml["caffeine"] * (product_yaml["size"] / 100)
+        product_caffeinetotal = product_yaml["caffeine"] * size_dl
         product_yaml.update({"caffeinetotal": round2(product_caffeinetotal)})
+
+        # price1mgcaffeine
+        product_price1mgcaffeine = product_averageprice / product_caffeinetotal
+        product_yaml.update({"price1mgcaffeine": round2(product_price1mgcaffeine)})
 
         # Set defaults when sugar is 0
         product_yaml.update(
@@ -139,7 +142,7 @@ def render_products(env: jinja2.Environment):
                 "score": calc_score(
                     product_yaml["caffeine"],
                     product_yaml["sugar"],
-                    product_yaml["averageprice"],
+                    product_price100ml # caffeine and sugar are per 100ml so use the 100ml price for fairness
                 )
             }
         )
@@ -156,7 +159,7 @@ def render_products(env: jinja2.Environment):
             product_out.write(
                 product_template.render(
                     item=product_yaml,
-                    now=datetime.datetime.utcnow,
+                    now=utc_now,
                 )
             )
 
@@ -176,9 +179,16 @@ def render_index(env: jinja2.Environment, products: Iterable[Dict]):
         main_out.write(
             main_template.render(
                 products=products,
-                now=datetime.datetime.utcnow,
+                now=utc_now,
             )
         )
+
+
+def utc_now() -> datetime.datetime:
+    """
+    Return now as datetime in UTC
+    """
+    return datetime.datetime.now(datetime.UTC)
 
 
 def render_sitemap(env: jinja2.Environment, urls: Iterable[str]):
@@ -192,7 +202,7 @@ def render_sitemap(env: jinja2.Environment, urls: Iterable[str]):
         sitemap_out.write(
             sitemap_template.render(
                 urls=sorted(urls),
-                now=datetime.datetime.utcnow,
+                now=utc_now,
             ),
         )
 
@@ -213,7 +223,7 @@ def render_rss(env: jinja2.Environment, products: Iterable[Dict]):
         rss_out.write(
             rss_template.render(
                 products=sorted_products,
-                now=datetime.datetime.utcnow,
+                now=utc_now,
             )
         )
 
