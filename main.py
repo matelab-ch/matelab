@@ -18,7 +18,7 @@ def calc_score(caffeine, sugar, avrprice):
     """
     Calculate the matelab score
 
-    caffeine/((sugar+1)/avrprice)
+    caffeine/((sugar+1)*avrprice)
     """
     return round2(float(caffeine) / ((float(sugar) + 1) * float(avrprice)))
 
@@ -142,7 +142,7 @@ def render_products(env: jinja2.Environment):
                 "score": calc_score(
                     product_yaml["caffeine"],
                     product_yaml["sugar"],
-                    product_yaml["averageprice"],
+                    product_price100ml # caffeine and sugar are per 100ml so use the 100ml price for fairness
                 )
             }
         )
