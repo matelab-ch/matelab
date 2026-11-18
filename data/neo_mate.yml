@@ -1,9 +1,9 @@
-draft: true # missing caffeine content / price
+draft: true # missing price
 brand: "NEO"
 product: "Mate"
 size: 330
 packaging: "Can"
-caffeine: 20 # Unknown
+caffeine: 30
 
 sugar: 5.5
 
